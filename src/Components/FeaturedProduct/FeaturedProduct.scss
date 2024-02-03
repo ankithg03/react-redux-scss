@@ -1,3 +1,47 @@
-.featured-product-container {
-    display: flex;
+/**
+    @title Featured Product CSS
+    .featured-product-item {
+        background: #00fffb;
+        height: 6rem;
+        border-radius: 5px;
+        padding: 1rem;
+    }
+    .featured-product-items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+    .featured-product-name {
+        font-weight: 600;
+    }
+    .featured-product-brand {
+        color: rgb(68, 68, 68);
+    }
+*
+**/
+.featured-product {
+    &-container {
+        display: grid;
+    }
+    &-title { 
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    &-items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+    &-item {
+        background: #00fffb;
+        height: 6rem;
+        border-radius: 5px;
+        padding: 1rem;
+        .name {
+            font-weight: 600;
+        }
+        .brand {
+            color: rgb(68, 68, 68);
+        }
+    }
 }
